@@ -50,7 +50,7 @@ const Login = () => {
             <img className='w-[200px] mx-auto' src={logo} alt=""></img>Welcome to Website</p>
           <p className='text-center font-thin leading-[120%]'>Create your account and discover world-class design talent.</p>
 
-          <button className='w-full h-[46px] border border-[#ccc] rounded-[22px] flex items-center px-4 cursor-pointer'><img src={GLogo} className='w-[20px]' alt="" /><span className='flex-1/2 font-semibold text-[#444]'>Continue with Google</span></button>
+          <button type='button' className='w-full h-[46px] border border-[#ccc] rounded-[22px] flex items-center px-4 cursor-pointer'><img src={GLogo} className='w-[20px]' alt="" /><span className='flex-1/2 font-semibold text-[#444]'>Continue with Google</span></button>
           <p className='text-center text-[14px] text-[#666]'>or</p>
 
           {/* ASDSADASDSASDASDDSDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */}
@@ -61,7 +61,7 @@ const Login = () => {
         <div className='h-[30px]'>
           {
             error &&
-            <p className='text-red-700 text-center'>Username or Password incorrect</p>
+            <p className='text-red-700 text-center'>Username or Password is incorrect</p>
           }
         </div>
 
