@@ -1,13 +1,22 @@
 import React from 'react'
-import { useStore } from '../zustand/store'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
-  const {count, } = useStore()
   return (
-    <div>
-      <h2>header {count}</h2>
-    </div>
+    <header className='h-[70px] bg-indigo-400 '>
+      <div className='container mx-auto flex items-center justify-between h-full text-white'>
+        <h2 className='text-3xl font-bold '>Header</h2>
+       <ul className='flex items-center gap-6'>
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li>
+          <Link to={"/statistics"}>Statisticst</Link>
+        </li>
+       </ul>
+      </div>
+    </header>
   )
 }
 
