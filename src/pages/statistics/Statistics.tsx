@@ -6,6 +6,8 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Statistics = () => {
   const [products, setProducts] = useState<null | []>([])
+  console.log(products);
+  
   useEffect(() => {
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
